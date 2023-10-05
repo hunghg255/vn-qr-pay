@@ -5,14 +5,14 @@ Thư viện hỗ trợ encode/decode mã QR của VietQR & VNPayQR
 ## Install
 
 ```bash
-npm install vietnam-qr-pay
+npm install vn-qr-pay
 ```
 
 ## `QRPay` class
 
 
 ```javascript
-import { QRPay } from 'vietnam-qr-pay';
+import { QRPay } from 'vn-qr-pay';
 ```
 
 | Name | Type | Description |
@@ -76,7 +76,7 @@ Thông tin bổ sung
 Trả về nội dung mã QR mới
 
 ```javascript
-import { QRPay } from 'vietnam-qr-pay';
+import { QRPay } from 'vn-qr-pay';
 
 
 const qrContent = '00020101021238530010A0000007270123000697041601092576788590208QRIBFTTA5303704540410005802VN62150811Chuyen tien6304BBB8'
@@ -89,7 +89,7 @@ qrPay.amount = '999999';
 qrPay.additionalData.purpose = 'Cam on nhe';
 
 const newQRContent = qrPay.build();
-/* 
+/*
 00020101021238530010A0000007270123000697041601092576788590208QRIBFTTA530370454069999995802VN62140810Cam on nhe6304E786
 */
 
@@ -99,7 +99,7 @@ const newQRContent = qrPay.build();
 
 ### VietQR
 ```javascript
-import { QRPay } from 'vietnam-qr-pay';
+import { QRPay } from 'vn-qr-pay';
 
 const qrContent = '00020101021238530010A0000007270123000697041601092576788590208QRIBFTTA5303704540410005802VN62150811Chuyen tien6304BBB8'
 const qrPay = new QRPay(qrContent);
@@ -114,7 +114,7 @@ console.log(qrPay.additionalData.purpose) // Chuyen tien
 
 ### VNPay
 ```javascript
-import { QRPay } from 'vietnam-qr-pay';
+import { QRPay } from 'vn-qr-pay';
 
 const qrContent = '00020101021126280010A0000007750110010531314453037045408210900005802VN5910CELLPHONES62600312CPSHN ONLINE0517021908061613127850705ONLHN0810CellphoneS63047685'
 const qrPay = new QRPay(qrContent);
