@@ -1,4 +1,4 @@
-import { genCRCCode, genFieldData, getBankBin } from 'src/utilts';
+import { genCRCCode, genFieldData, getBankBin } from '../utilts';
 import {
   AdditionalDataID,
   FieldID,
@@ -7,7 +7,7 @@ import {
   VietQRConsumerFieldID,
   VietQRSevice,
 } from '../constants';
-import { TOptionsVietQr } from 'src/types';
+import { TOptionsVietQr } from '../types';
 
 export const encodeVietQr = (options: TOptionsVietQr): string => {
   const version = genFieldData(FieldID.VERSION, options?.version ?? '01' ?? '');

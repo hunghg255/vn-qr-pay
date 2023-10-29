@@ -1,5 +1,5 @@
-import { TOptionsVnPay } from 'src/types';
-import { genCRCCode, genFieldData } from 'src/utilts';
+import { TOptionsVnPay } from '../types';
+import { genCRCCode, genFieldData } from '../utilts';
 import {
   AdditionalDataID,
   FieldID,

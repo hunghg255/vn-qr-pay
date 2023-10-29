@@ -1,5 +1,5 @@
-import { AdditionalDataID, FieldID, ProviderFieldID, QRProvider, QRProviderGUID, VietQRConsumerFieldID } from "src/constants"
-import { genCRCCode } from "src/utilts"
+import { AdditionalDataID, FieldID, ProviderFieldID, QRProvider, QRProviderGUID, VietQRConsumerFieldID } from "./constants"
+import { genCRCCode } from "./utilts"
 
 const sliceContent = (content: string): { id: string, length: number, value: string, nextValue: string }  => {
   const id = content.slice(0, 2)
@@ -9,7 +9,7 @@ const sliceContent = (content: string): { id: string, length: number, value: str
   return { id, length, value, nextValue }
 }
 
-const parseVietQRConsumer = (content: string, dataParser): void => {
+const parseVietQRConsumer = (content: string, dataParser: any): void => {
   const { id, value, nextValue } = sliceContent(content)
   switch (id) {
     case VietQRConsumerFieldID.BANK_BIN:
@@ -24,7 +24,7 @@ const parseVietQRConsumer = (content: string, dataParser): void => {
   if (nextValue.length > 4) parseVietQRConsumer(nextValue, dataParser)
 }
 
-const parseProviderInfo = (content: string, dataParser): void => {
+const parseProviderInfo = (content: string, dataParser: any): void => {
   const { id, value, nextValue } = sliceContent(content);
 
   switch (id) {
@@ -49,7 +49,7 @@ const parseProviderInfo = (content: string, dataParser): void => {
   if (nextValue.length > 4) parseProviderInfo(nextValue, dataParser)
 }
 
-const parseAdditionalData = (content: string, dataParser): void => {
+const parseAdditionalData = (content: string, dataParser: any): void => {
   const { id, value, nextValue } = sliceContent(content)
 
   switch (id) {
@@ -86,7 +86,7 @@ const parseAdditionalData = (content: string, dataParser): void => {
   if (nextValue.length > 4) parseAdditionalData(nextValue, dataParser)
 }
 
-const parseRootContent = (content: string, dataParser): void => {
+const parseRootContent = (content: string, dataParser: any): void => {
   const { id, length, value, nextValue } = sliceContent(content)
 
   if (value.length !== length) {

@@ -623,7 +623,7 @@ export const Banks: Bank[] = [
   }
 ]
 
-export const BanksObject = Banks.reduce((acc, bank) => {
+export const BanksObject = Banks.reduce((acc: any, bank: any) => {
   acc[bank.key] = bank
   return acc
 }, {})
