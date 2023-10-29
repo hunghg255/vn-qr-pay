@@ -20,7 +20,7 @@ export enum FieldID {
   TIP_AND_FEE_AMOUNT = '56',
   TIP_AND_FEE_PERCENT = '57',
   NATION = '58',
-  ACQUIER = '59',
+  ACQUIER_NAME = '59',
   CITY = '60',
   ZIP_CODE = '61',
   ADDITIONAL_DATA = '62',
@@ -54,6 +54,7 @@ export enum AdditionalDataID {
   PURPOSE_OF_TRANSACTION = '08', // Mục đích giao dịch
   ADDITIONAL_CONSUMER_DATA_REQUEST = '09' // Yêu cầu dữ liệu KH bổ sung
 }
+
 
 export class Prodiver {
   fieldId?: string
