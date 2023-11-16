@@ -1,4 +1,4 @@
-# Vietnam QR Pay
+# Vietnam QR Pay 1
 
 Thư viện hỗ trợ encode/decode mã QR của VietQR & VNPayQR
 
