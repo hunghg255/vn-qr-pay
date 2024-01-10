@@ -1,6 +1,19 @@
-# Vietnam QR Pay
+<p align="center">
+<a href="https://www.npmjs.com/package/vn-qr-pay" target="_blank" rel="noopener noreferrer">
+<img src="https://api.iconify.design/uiw:qrcode.svg?color=%239c9c9c" alt="logo" width='100'/></a>
+</p>
 
-Thư viện hỗ trợ encode/decode mã QR của VietQR & VNPayQR
+<p align="center">
+  Thư viện hỗ trợ encode/decode mã QR của VietQR & VNPayQR
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/vn-qr-pay" target="_blank" rel="noopener noreferrer"><img src="https://badge.fury.io/js/csvs-parsers.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/package/vn-qr-pay" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/dt/csvs-parsers.svg?logo=npm" alt="NPM Downloads" /></a>
+  <a href="https://bundlephobia.com/result?p=vn-qr-pay" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/bundlephobia/minzip/vn-qr-pay" alt="Minizip" /></a>
+  <a href="https://github.com/hunghg255/vn-qr-pay/graphs/contributors" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg" alt="Contributors" /></a>
+  <a href="https://github.com/hunghg255/vn-qr-pay/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/license/hunghg255/vn-qr-pay" alt="License" /></a>
+</p>
 
 ## Install
 
